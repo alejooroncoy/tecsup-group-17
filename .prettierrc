@@ -1,3 +1,5 @@
 {
-  "parser": "html"
+  "parser": "html",
+  "tabWidth": 2,
+  "bracketSpacing": true
 }
