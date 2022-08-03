@@ -1,5 +1,8 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -9,7 +12,7 @@ body {
 header.header {
   width: 100%;
   height: 10em;
-  background-color: azure;
+  background-color: #082032;
   display: flex;
   padding: 0 3em;
   box-sizing: border-box;
@@ -35,12 +38,12 @@ header .header__nav--links {
 
 header .header__nav--links > li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-header .header__nav--links > li a:visited {
-  color: rgb(124 124 124);
-}
+/* header .header__nav--links > li a:visited {
+  color: rgb(79 251 220);
+} */
 
 header .header__nav--links > li a:hover {
   text-decoration: underline;
@@ -49,11 +52,120 @@ header .header__nav--links > li a:hover {
 main.main {
   width: 100%;
   height: 100%;
+  padding: 3em 0;
+  background-color: white;
 }
 
+main.main table {
+  border: 1px solid black;
+}
+
+table.main__table thead.main__table--head > .main__table--head.tr__head > .tr__head--th {
+  text-align: center;
+  border: 1px solid black;
+}
+
+table.main__table thead.main__table--head > .main__table--head.tr__head {
+  line-height: 2em;
+}
+
+main.main table tbody > tr > td {
+  border: 1px solid black;
+  padding: 1em;
+}
+div.main__section--container {
+  margin: 0 auto;
+  background-color: #FF4C29;
+  width: 80%;
+  border-radius: .1em;
+  padding: 1em;
+}
+
+.main__section--container.title {
+  text-align: center;
+  font-size: 2em;
+  margin: .5em 0;
+  color: white;
+}
+
+.main__section--container.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+  /* width; */
+}
+
+.main__section--container.form > label {
+  color: white;
+}
+
+.main__section--container.form > input {
+  width: 40%;
+  line-height: 2em;
+  outline: none;
+  border: none;
+  margin: .5em 0 0 0;
+  padding: 0 .8em;
+}
 
 .header__nav--link.img {
   object-fit: cover;
+  width: 6em;
+}
+
+.main__section--container.form--button {
+  border: none;
+  cursor: pointer;
+  line-height: 3em;
+  font-size: 1em;
+  font-weight: 600;
+  width: 50%;
+  margin: .5em 0;
+
+}
+
+.main__section--container.form--button:active {
+  transform: scale(.95);
+}
+
+.footer {
+  background-color: #ebebeb;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer__nav--container.list {
+  list-style: none;
+  display: flex;
+}
+
+.footer__nav--container.list__item {
+  margin: 0 1em;
+}
+
+.icon-instagram {
+  color:rgb(255 134 215);
+}
+
+.icon-size {
+  font-size: 2.5em;
+}
+
+.icon-facebook {
+  color: #1e1eff;
+}
+
+.icon-youtube {
+  color: #ff0000;
+}
+
+.icon-github {
+  color: black;
+}
+.icon-globe {
+  color: rgb(64, 191, 200);
 }
 
 @media screen and (min-width: 728px) {
@@ -66,5 +178,8 @@ main.main {
 @media screen and (min-width: 1280px) {
   header .header__nav--links {
     width: 20%;
+  }
+  div.main__section--container {
+    width: 60%;
   }
 }
