@@ -7,9 +7,9 @@
 
 body {
   margin: 0;
-  position: relative;
   height: 100vh;
   padding: 0;
+
 }
 
 header.header {
@@ -225,6 +225,7 @@ div.footer__nav--container {
 .footer__nav--container.list {
   list-style: none;
   display: flex;
+  padding: 0;
   align-items: center;
   margin: 0;
   justify-content: center;
@@ -318,5 +319,6 @@ div.footer__nav--container {
   }
   .footer__nav--container.list {
     justify-content: flex-start;
+    padding: revert;
   }
 }
