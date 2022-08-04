@@ -40,7 +40,7 @@
     />
     <meta property="twitter:image" content="./assets/img/web_photo.png" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="header__nav">
         <a class="header__nav--link" href="#">
@@ -52,14 +52,19 @@
             height="100"
           />
         </a>
-        <ul class="header__nav--links">
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Sobre mi</a></li>
-          <li>
+        <ul class="header__nav--list">
+          <li class="list__item">
+            <a href="#" class="list__item--link">Proyectos</a>
+          </li>
+          <li class="list__item">
+            <a class="list__item--link" href="#">Sobre mi</a>
+          </li>
+          <li class="list__item">
             <a
               href="https://github.com/alejooroncoy"
               target="_blank"
               rel="noopener noreferrer"
+              class="list__item--link"
               >Contacto</a
             >
           </li>
@@ -130,40 +135,50 @@
               Experiencia
             </caption>
             <thead class="main__table--head">
-              <tr class="main__table--head tr__head">
-                <th class="tr__head--th">Empresa</th>
-                <th class="tr__head--th">Cargo</th>
-                <th class="tr__head--th">Funciones</th>
+              <tr class="row">
+                <th class="row__head">Empresa</th>
+                <th class="row__head">Cargo</th>
+                <th class="row__head">Funciones</th>
               </tr>
             </thead>
             <tbody class="main__table--body">
-              <tr>
-                <td>Cineplanet</td>
-                <td>Frontend Developer</td>
-                <td>Desarrollo de aplicaciones web enfocadas en Cineplanet</td>
+              <tr class="row">
+                <td class="row__data">Cineplanet</td>
+                <td class="row__data">Frontend Developer</td>
+                <td class="row__data">
+                  Desarrollo de aplicaciones web enfocadas en Cineplanet
+                </td>
               </tr>
-              <tr>
-                <td rowspan="2">Cinepolis</td>
-                <td>Frontend Developer</td>
-                <td>Desarrollo de aplicaciones web enfocadas en Cinepolis</td>
+              <tr class="row">
+                <td class="row__data" rowspan="2">Cinepolis</td>
+                <td class="row__data">Frontend Developer</td>
+                <td class="row__data">
+                  Desarrollo de aplicaciones web enfocadas en Cinepolis
+                </td>
               </tr>
-              <tr>
-                <td>Frontend Developer</td>
-                <td>Desarrollo de aplicaciones web enfocadas en UVK</td>
+              <tr class="row">
+                <td class="row__data">Frontend Developer</td>
+                <td class="row__data">
+                  Desarrollo de aplicaciones web enfocadas en UVK
+                </td>
               </tr>
-              <tr>
-                <td>Cinemark</td>
-                <td>Frontend Developer</td>
-                <td>
-                  <ul>
-                    <li>Programador en tecnologías webs</li>
-                    <li>Vendedor de palomitasxd</li>
+              <tr class="row">
+                <td class="row__data">Cinemark</td>
+                <td class="row__data">Frontend Developer</td>
+                <td class="row__data">
+                  <ul class="row__data--list">
+                    <li class="list-item">Programador en tecnologías webs</li>
+                    <li class="list-item">Vendedor de palomitasxd</li>
                   </ul>
                 </td>
               </tr>
-              <tr>
-                <td colspan="3">
-                  <a href="https://github.com/alejooroncoy">Ver más</a>
+              <tr class="row">
+                <td class="row__data" colspan="3">
+                  <a
+                    class="row__data--link"
+                    href="https://github.com/alejooroncoy"
+                    >Ver más</a
+                  >
                 </td>
               </tr>
             </tbody>
@@ -173,49 +188,61 @@
 
       <section class="main__section">
         <div class="main__section--container">
-          <h2 class="main__section--container title">Contacto</h2>
-          <form class="main__section--container form">
-            <label for="label_name"> Nombre: </label>
+          <h2 class="title">Contacto</h2>
+          <form class="form">
+            <label for="label_name" class="form__label"> Nombre: </label>
             <input
               type="text"
               id="label_name"
               placeholder="Name..."
+              class="form__input"
               name="name"
             />
-            <label for="label_phone">Celular: </label>
+            <label for="label_phone" class="form__label">Celular: </label>
             <input
               type="number"
               name="phone"
               id="label_phone"
+              class="form__input"
               placeholder="Phone Number..."
             />
-            <label for="label_email">Correo: </label>
+            <label for="label_email" class="form__label">Correo: </label>
             <input
               type="email"
+              class="form__input"
               name="emal"
               id="label_email"
               placeholder="Email..."
             />
-            <label for="label_company"> Compañía: </label>
+            <label for="label_company" class="form__label"> Compañía: </label>
             <input
               type="text"
               id="label_company"
+              class="form__input"
               placeholder="Company..."
               name="company"
             />
-            <label for="date">Fecha:</label>
-            <select name="date" id="date">
-              <option value="date1">Fecha 1</option>
-              <option value="date2">Fecha 2</option>
-              <option value="date3">Fecha 3</option>
+            <label for="date" class="form__label">Fecha:</label>
+            <select name="date" class="form__select" id="date">
+              <option class="form__select--option" value="date1">
+                Fecha 1
+              </option>
+              <option class="form__select--option" value="date2">
+                Fecha 2
+              </option>
+              <option class="form__select--option" value="date3">
+                Fecha 3
+              </option>
             </select>
-            <label for="label_terms"
-              ><input type="checkbox" name="" id="label_terms" />¿Aceptas los
-              términos?</label
-            >
-            <button class="main__section--container form--button" type="submit">
-              Enviar
-            </button>
+            <label for="label_terms" class="form__label">
+              <input
+                class="form__input form__label--input"
+                type="checkbox"
+                id="label_terms"
+              />
+              ¿Aceptas los términos?
+            </label>
+            <button class="form--button" type="submit">Enviar</button>
           </form>
         </div>
       </section>
@@ -223,27 +250,27 @@
     <footer class="footer">
       <nav class="footer__nav">
         <div class="footer__nav--container">
-          <ul class="footer__nav--container list">
-            <li class="footer__nav--container list__item">
-              <a class="footer__nav--container list__item--link" href="#">
+          <ul class="list">
+            <li class="list__item">
+              <a class="list__item--link" href="#">
                 <i class="bi bi-facebook icon-size icon-facebook"></i>
               </a>
             </li>
-            <li class="footer__nav--container list__item">
+            <li class="list__item">
               <a
                 href="https://www.youtube.com/channel/UCyvDZEGsLvIS2OoBK_8zX_w"
                 target="_blank"
-                class="footer__nav--container list__item--link"
+                class="list__item--link"
               >
                 <i class="bi bi-youtube icon-size icon-youtube"></i>
               </a>
             </li>
-            <li class="footer__nav--container list__item">
-              <a href="#" class="footer__nav--container list__item--link">
+            <li class="list__item">
+              <a href="#" class="list__item--link">
                 <i class="bi bi-instagram icon-size icon-instagram"></i>
               </a>
             </li>
-            <li class="footer__nav--container list__item">
+            <li class="list__item">
               <a
                 href="https://github.com/alejooroncoy"
                 target="_blank"
@@ -252,16 +279,16 @@
                 <i class="bi bi-github icon-size icon-github"></i>
               </a>
             </li>
-            <li class="footer__nav--container list__item">
-              <a href="#" class="footer__nav--container list__item--link">
+            <li class="list__item">
+              <a href="#" class="list__item--link">
                 <i class="bi bi-globe icon-size icon-globe"></i>
               </a>
             </li>
           </ul>
-          <h2 class="footer__copyright">
+          <h2 class="footer__nav--copyright">
             👨‍💻 Copyright &copy; 2022
             <a
-              class="footer__copyright--link"
+              class="copyright__link"
               href="https://github.com/alejooroncoy"
               target="_blank"
             >
