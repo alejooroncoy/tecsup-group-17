@@ -4,8 +4,10 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
+  position: relative;
   padding: 0;
 }
 
@@ -58,6 +60,8 @@ main.main {
 
 main.main table {
   border: 1px solid black;
+  width: 80%;
+  margin: auto;
 }
 
 table.main__table thead.main__table--head > .main__table--head.tr__head > .tr__head--th {
@@ -75,7 +79,7 @@ main.main table tbody > tr > td {
 }
 div.main__section--container {
   margin: 0 auto;
-  background-color: #FF4C29;
+  background-color: #2C394B;
   width: 80%;
   border-radius: .1em;
   padding: 1em;
@@ -101,12 +105,20 @@ div.main__section--container {
 }
 
 .main__section--container.form > input {
-  width: 40%;
+  width: 60%;
   line-height: 2em;
   outline: none;
   border: none;
   margin: .5em 0 0 0;
   padding: 0 .8em;
+}
+
+.main__section--container.form > select {
+  outline: none;
+  border: none;
+  padding: 1em;
+  font-size: 1em;
+  width: 60%;
 }
 
 .header__nav--link.img {
@@ -131,18 +143,22 @@ div.main__section--container {
 
 .footer {
   background-color: #ebebeb;
-  position: absolute;
   width: 100%;
-  bottom: 0;
 }
 
 .footer__nav--container.list {
   list-style: none;
   display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: flex-start;
+  gap: 0 2em;
+  line-height: 4em;
+  width: 100%;
 }
 
-.footer__nav--container.list__item {
-  margin: 0 1em;
+div.footer__nav--container {
+  line-height: 4em;
 }
 
 .icon-instagram {
@@ -181,5 +197,11 @@ div.main__section--container {
   }
   div.main__section--container {
     width: 60%;
+  }
+  .main__section--container.form > input {
+    width: 40%;
+  }
+  .main__section--container.form > select {
+    width: 40%;
   }
 }
