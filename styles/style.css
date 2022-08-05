@@ -7,7 +7,6 @@
 
 .body {
   margin: 0;
-  height: 100vh;
   padding: 0;
 }
 
@@ -16,6 +15,10 @@
   height: 10em;
   background-color: #082032;
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0.625em 0.625em #dadadaff;
   padding: 0 3em;
   box-sizing: border-box;
 }
@@ -46,6 +49,12 @@
 
 .header .header__nav--list > .list__item .list__item--link:hover {
   text-decoration: underline;
+}
+
+.header .nav__link--img {
+  object-fit: cover;
+  width: 6em;
+  height: auto;
 }
 
 .main {
@@ -191,10 +200,6 @@
   width: 60%;
 }
 
-.header__nav--link.img {
-  object-fit: cover;
-  width: 6em;
-}
 
 .main__section--container .form--button {
   border: none;
@@ -291,6 +296,12 @@
 }
 
 @media screen and (min-width: 728px) {
+  .header {
+    height: 8em;
+  }
+  .header .nav__link--img {
+    width: 5em;
+  }
   .header .header__nav--list {
     width: 50%;
     flex-direction: row;
