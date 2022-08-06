@@ -42,106 +42,113 @@
   </head>
   <body class="body">
     <header class="header">
-      <nav class="header__nav">
-        <a class="header__nav--link" href="#">
-          <img
-            src="./assets/img/Logo.png"
-            alt="logo"
-            class="nav__link--img"
-            width="150"
-            height="100"
-          />
-        </a>
-        <ul class="header__nav--list">
-          <li class="list__item">
-            <a href="#" class="list__item--link">Proyectos</a>
-          </li>
-          <li class="list__item">
-            <a class="list__item--link" href="#">Sobre mi</a>
-          </li>
-          <li class="list__item">
-            <a
-              href="https://github.com/alejooroncoy"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="list__item--link"
-              >Contacto</a
-            >
-          </li>
-        </ul>
+      <nav class="header-nav">
+        <div class="header-container">
+          <a class="header-nav__link-logo-container" href="#hero">
+            <img
+              src="./assets/img/Logo.png"
+              alt="logo"
+              class="header-nav__link-logo"
+              width="150"
+              height="100"
+            />
+          </a>
+          <ul class="header-nav__list-container">
+            <li>
+              <a class="header-nav__menu-link" href="#">Experiencia</a>
+            </li>
+            <li>
+              <a href="#contact" class="header-nav__menu-link">Contacto</a>
+            </li>
+            <li>
+              <a
+                class="header-nav__menu-link header-nav__menu-link--active"
+                href="https://github.com/alejooroncoy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Alejo</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main">
-      <article class="main__article">
-        <div class="main__article--container">
-          <div class="info">
-            <h1 class="info__title">Base 2 by Web 4B</h1>
-            <h2 class="info__subtitle">
+      <article id="hero" class="i-hero">
+        <div class="i-hero-container">
+          <div class="i-hero__info-container">
+            <h1 class="i-hero__info-title">Base 2 by Web 4B</h1>
+            <h2 class="i-hero__info-subtitle">
               Los mejores diseños y desarrollos de páginas web en el Perú
             </h2>
-            <p class="info__description">
+            <p class="i-hero__info__paragraph">
               Somos el mejor lugar donde puedes aprender sobre desarrollo web
               frontend. Asimismo, con Base 2 by Web 4B puedes hacer realidad ese
               sueño que tienes en mente. ¡Cambia tu vida!
             </p>
             <a
-              class="info__link"
+              class="i-hero__info-link"
               href="https://github.com/alejooroncoy"
               target="_blank"
               rel="noopener noreferrer"
               >¡Aprender gratis!</a
             >
           </div>
-          <div class="images">
+          <div class="i-hero__img-container">
             <img
               src="https://avatars.githubusercontent.com/u/59104403?v=4"
               alt="alejo-image"
               width="256"
               height="256"
+              class="i-hero__img-pro"
             />
-            <figure class="images__figure">
+            <figure class="i-hero__img-tech-container">
               <img
                 src="./assets/svg/css.svg"
                 alt="CSS"
                 width="64"
                 height="64"
+                class="i-hero__img-tech"
               />
               <img
                 src="./assets/svg/html.svg"
                 alt="HTML"
                 width="64"
                 height="64"
+                class="i-hero__img-tech"
               />
               <img
                 src="./assets/svg/javascript.svg"
                 alt="JS"
                 width="64"
                 height="64"
+                class="i-hero__img-tech"
               />
               <img
                 src="./assets/svg/logo-react.svg"
                 alt="REACT"
                 width="64"
                 height="64"
+                class="i-hero__img-tech"
               />
             </figure>
           </div>
         </div>
       </article>
-      <section>
+      <section id="experience">
         <div>
-          <table class="main__table">
-            <caption class="main__table--caption">
+          <table class="main-table">
+            <caption class="main-table-caption">
               Experiencia
             </caption>
-            <thead class="main__table--head">
+            <thead class="main-table__head">
               <tr class="row">
                 <th class="row__head">Empresa</th>
                 <th class="row__head">Cargo</th>
                 <th class="row__head">Funciones</th>
               </tr>
             </thead>
-            <tbody class="main__table--body">
+            <tbody class="main-table__body">
               <tr class="row">
                 <td class="row__data">Cineplanet</td>
                 <td class="row__data">Frontend Developer</td>
@@ -166,7 +173,7 @@
                 <td class="row__data">Cinemark</td>
                 <td class="row__data">Frontend Developer</td>
                 <td class="row__data">
-                  <ul class="row__data--list">
+                  <ul class="row__data__list">
                     <li class="list-item">Programador en tecnologías webs</li>
                     <li class="list-item">Vendedor de palomitasxd</li>
                   </ul>
@@ -175,8 +182,9 @@
               <tr class="row">
                 <td class="row__data" colspan="3">
                   <a
-                    class="row__data--link"
+                    class="row__data__link"
                     href="https://github.com/alejooroncoy"
+                    target="_blank"
                     >Ver más</a
                   >
                 </td>
@@ -186,73 +194,67 @@
         </div>
       </section>
 
-      <section class="main__section">
-        <div class="main__section--container">
+      <section class="main-section">
+        <div class="main-section-container" id="contact">
           <h2 class="title">Contacto</h2>
           <form class="form">
-            <label for="label_name" class="form__label"> Nombre: </label>
+            <label for="label_name" class="form-label"> Nombre: </label>
             <input
               type="text"
               id="label_name"
               placeholder="Name..."
-              class="form__input"
+              class="form-input"
               name="name"
             />
-            <label for="label_phone" class="form__label">Celular: </label>
+            <label for="label_phone" class="form-label">Celular: </label>
             <input
               type="number"
               name="phone"
               id="label_phone"
-              class="form__input"
+              class="form-input"
               placeholder="Phone Number..."
             />
-            <label for="label_email" class="form__label">Correo: </label>
+            <label for="label_email" class="form-label">Correo: </label>
             <input
               type="email"
-              class="form__input"
+              class="form-input"
               name="emal"
               id="label_email"
               placeholder="Email..."
             />
-            <label for="label_company" class="form__label"> Compañía: </label>
+            <label for="label_company" class="form-label"> Compañía: </label>
             <input
               type="text"
               id="label_company"
-              class="form__input"
+              class="form-input"
               placeholder="Company..."
               name="company"
             />
-            <label for="date" class="form__label">Fecha:</label>
-            <select name="date" class="form__select" id="date">
-              <option class="form__select--option" value="date1">
-                Fecha 1
-              </option>
-              <option class="form__select--option" value="date2">
-                Fecha 2
-              </option>
-              <option class="form__select--option" value="date3">
-                Fecha 3
-              </option>
+            <label for="date" class="form-label">Fecha:</label>
+            <select name="date" class="form-select" id="date">
+              <option class="form-select-option" value="date1">Fecha 1</option>
+              <option class="form-select-option" value="date2">Fecha 2</option>
+              <option class="form-select-option" value="date3">Fecha 3</option>
             </select>
-            <label for="label_terms" class="form__label">
+            <label for="label_terms" class="form-label">
               <input
-                class="form__input form__label--input"
+                class="form-input form-label-input"
                 type="checkbox"
                 id="label_terms"
               />
               ¿Aceptas los términos?
             </label>
-            <button class="form--button" type="submit">Enviar</button>
+            <button class="form-button" type="submit">Enviar</button>
           </form>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <nav class="footer__nav">
-        <div class="footer__nav--container">
+      <nav class="footer-nav">
+        <div class="footer-nav-container">
           <ul class="list">
             <li class="list__item">
-              <a class="list__item--link" href="#">
+              <a class="list__item__link" href="#">
                 <i class="bi bi-facebook icon-size icon-facebook"></i>
               </a>
             </li>
@@ -260,13 +262,13 @@
               <a
                 href="https://www.youtube.com/channel/UCyvDZEGsLvIS2OoBK_8zX_w"
                 target="_blank"
-                class="list__item--link"
+                class="list__item__link"
               >
                 <i class="bi bi-youtube icon-size icon-youtube"></i>
               </a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__item--link">
+              <a href="#" class="list__item__link">
                 <i class="bi bi-instagram icon-size icon-instagram"></i>
               </a>
             </li>
@@ -274,23 +276,25 @@
               <a
                 href="https://github.com/alejooroncoy"
                 target="_blank"
-                class="footer__nav--container list__item--link"
+                rel="noopener noreferrer"
+                class="footer__nav--container list__item__link"
               >
                 <i class="bi bi-github icon-size icon-github"></i>
               </a>
             </li>
             <li class="list__item">
-              <a href="#" class="list__item--link">
+              <a href="#" class="list__item__link">
                 <i class="bi bi-globe icon-size icon-globe"></i>
               </a>
             </li>
           </ul>
-          <h2 class="footer__nav--copyright">
+          <h2 class="footer-nav__copyright">
             👨‍💻 Copyright &copy; 2022
             <a
               class="copyright__link"
               href="https://github.com/alejooroncoy"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Alejo Oroncoy
             </a>
