@@ -17,11 +17,11 @@
 
 .header {
   width: 100%;
-  height: 10em;
+  height: 10rem;
   background-color: #082032;
   display: flex;
   z-index: 1;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   box-shadow: 0 0 0 0.05rem white;
@@ -29,11 +29,6 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 728px) {
-  .header {
-    position: fixed;
-  }
-}
 .header-nav {
   width: 100%;
   height: 100%;
@@ -59,14 +54,43 @@
   height: auto;
 }
 
-.header-nav__list-container {
+.header-nav__menu-list {
   width: 30%;
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
+  margin: 0;
   padding: 0;
   gap: .5em 0;
   justify-content: space-evenly;
+}
+
+.header-nav__checkbox {
+  display: none;
+}
+
+.header-nav__icon {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.header-nav__checkbox:checked + .menu--hamburger {
+  position: fixed;
+  top: 10rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-image: linear-gradient(#20232ae0, #20232ae0);
+}
+
+.menu--hamburger {
+  display: none;
 }
 
 .header-nav__menu-link {
@@ -96,9 +120,21 @@
   color: #61dafb;
 }
 
+.header-nav__menu-link--active::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 0.125rem;
+  bottom: -0.125rem;
+  left: 0;
+  background-color: gold;
+  transition: width .25s ease-in-out;
+}
+
 .main {
   width: 100%;
   background-color: #20232a;
+  padding-top: 10rem;
 }
 
 .i-hero {
@@ -320,9 +356,6 @@
   box-sizing: border-box;
   transition: background-color 0.25s;
 }
-.row__data__link {
-  color: white;
-}
 
 .section__cards {
   display: flex;
@@ -524,16 +557,28 @@
   text-decoration: none;
 }
 
+
 @media (min-width: 728px) {
   .header {
-    height: 8em;
+    height: 8rem;
+  }
+  .header-nav__checkbox:checked + .menu--hamburger {
+    /* top: 8rem; */
+    position: static;
+    display: flex;
+  }
+  .menu--hamburger {
+    display: flex;
   }
   .header-nav__link-logo {
     width: 5em;
   }
-  .header-nav__list-container {
+  .header-nav__menu-list {
     flex-direction: row;
     gap: 0 1rem;
+  }
+  .main {
+    padding-top: 8rem;
   }
   .i-hero__info__paragraph {
     display: block;
@@ -578,14 +623,18 @@
   .menu__link:hover {
     font-size: 2.5rem;
   }
+  .header-nav__icon {
+    display: none;
+  }
 }
 
 @media (min-width: 1280px) {
   .main-section-container {
     width: 60%;
   }
-  .header-nav__list-container {
+  .header-nav__menu-list {
     flex-direction: row;
-    gap: 0;
+    gap: 0 1rem;
+
   }
 }
