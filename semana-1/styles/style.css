@@ -1,7 +1,6 @@
 :root {
   scroll-behavior: smooth;
   --primary-theme-color: #20232a;
-  --primary-light-color: #282c3440;
   --secondary-theme-color: #282c34;
   --primary-text-color: #fff;
   --secondary-text-color: #eee;
@@ -27,7 +26,6 @@
   font-family: var(--primary-font-family);
   margin: 0;
 }
-
 
 @media (min-width: 768px) {
   :root {

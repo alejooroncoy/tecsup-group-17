@@ -1,0 +1,14 @@
+.wave {
+  position: relative;
+  margin: 0;
+}
+
+.wave--reverse {
+  margin: -0.25rem 0;
+  transform: rotate(180deg);
+}
+
+.wave__wave {
+  display: block;
+  fill: var(--secondary-theme-color);
+}

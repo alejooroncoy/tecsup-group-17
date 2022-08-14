@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog personal de Alejo</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/g17css.css" />
     <!-- Primary Meta Tags -->
     <title>Blog personal de Alejo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -49,36 +50,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
   </head>
   <body class="body">
     <header class="header">
-      <nav class="header-nav">
-        <div class="header-container">
-          <a class="header-nav__link-logo-container" href="#hero">
+      <nav class="nav">
+        <div class="container container--headed">
+          <a href="#hero">
             <img
               src="./assets/img/Logo.png"
               alt="logo"
-              class="header-nav__link-logo"
+              class="nav__link-logo"
               width="150"
-              height="100"
+              height="150"
             />
           </a>
-          <label for="menu"><i class="bi bi-list header-nav__icon"></i></label>
-          <input type="checkbox" id="menu" class="header-nav__checkbox" />
+          <label for="menu" class="menu-icon"
+            ><i class="bi bi-list header-nav__icon"></i
+          ></label>
+          <input type="checkbox" id="menu" class="menu-checkbox" />
 
-          <ul class="header-nav__menu-list menu--hamburger">
+          <ul class="menu menu--hamburger">
             <li>
-              <a class="header-nav__menu-link" href="#">Experiencia</a>
+              <a class="menu__link" href="#iWeeks">Semanas</a>
             </li>
             <li>
-              <a href="#contact" class="header-nav__menu-link">Contacto</a>
+              <a href="#contact" class="menu__link">Contacto</a>
             </li>
             <li>
               <a
-                class="header-nav__menu-link header-nav__menu-link--active"
+                class="menu__link menu__link--active"
                 href="https://github.com/alejooroncoy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -90,62 +97,62 @@
       </nav>
     </header>
     <main class="main">
-      <article id="hero" class="i-hero">
-        <div class="i-hero-container">
-          <div class="i-hero__info-container">
-            <h1 class="i-hero__info-title">Base 2 by Web 4B</h1>
-            <h2 class="i-hero__info-subtitle">
+      <article id="hero" class="hero">
+        <div class="container container--hero">
+          <div class="card card--hero">
+            <h1 class="card__title card__title--hero">Base 2 by Web 4B</h1>
+            <h2 class="card__subtitle card__subtitle--hero">
               Los mejores diseños y desarrollos de páginas web en el Perú
             </h2>
-            <p class="i-hero__info__paragraph">
+            <p class="card__paragraph card__paragraph--hero">
               Somos el mejor lugar donde puedes aprender sobre desarrollo web
               frontend. Asimismo, con Base 2 by Web 4B puedes hacer realidad ese
               sueño que tienes en mente. ¡Cambia tu vida!
             </p>
             <a
-              class="i-hero__info-link"
+              class="button button--primary"
               href="https://github.com/alejooroncoy"
               target="_blank"
               rel="noopener noreferrer"
               >¡Aprender gratis!</a
             >
           </div>
-          <div class="i-hero__img-container">
+          <div class="hero__img-container">
             <img
               src="./assets/img/image_hero.png"
               alt="alejo-image"
               width="256"
               height="256"
-              class="i-hero__img-pro"
+              class="hero__img-pro"
             />
-            <figure class="i-hero__img-tech-container">
+            <figure class="hero__img-tech-container">
               <img
                 src="./assets/svg/html.svg"
                 alt="HTML"
                 width="64"
                 height="64"
-                class="i-hero__img-tech"
+                class="hero__img-tech"
               />
               <img
                 src="./assets/svg/css.svg"
                 alt="CSS"
                 width="64"
                 height="64"
-                class="i-hero__img-tech"
+                class="hero__img-tech"
               />
               <img
                 src="./assets/svg/javascript.svg"
                 alt="JS"
                 width="64"
                 height="64"
-                class="i-hero__img-tech"
+                class="hero__img-tech"
               />
               <img
                 src="./assets/svg/logo-react.svg"
                 alt="REACT"
                 width="64"
                 height="64"
-                class="i-hero__img-tech"
+                class="hero__img-tech"
               />
             </figure>
           </div>
@@ -163,57 +170,21 @@
           ></path>
         </svg>
       </figure>
-      <section id="iExperience" class="section">
+      <section id="iWeeks" class="section section--secondary">
         <div class="container container--elements">
-          <h2 class="section__title">👨‍💻 Experiencia 👨‍💻</h2>
-          <div class="section__cards">
-            <div class="card-exp">
-              <h3 class="card-exp__company">Cineplanet</h3>
-              <h4 class="card-exp__role">Frontend Developer</h4>
-              <ul class="card-exp__activities">
-                <li class="card-exp__activity">
-                  Desarrollo de aplicaciones web enfocadas en Cineplanet.
-                </li>
-              </ul>
-            </div>
-            <div class="card-exp">
-              <h3 class="card-exp__company">UVK</h3>
-              <h4 class="card-exp__role">Frontend Developer</h4>
-              <ul class="card-exp__activities">
-                <li class="card-exp__activity">
-                  Desarrollo de aplicaciones web enfocadas en UVK
-                </li>
-              </ul>
-            </div>
-            <div class="card-exp">
-              <h3 class="card-exp__company">Cinepolis</h3>
-              <h4 class="card-exp__role">Frontend Developer</h4>
-              <ul class="card-exp__activities">
-                <li class="card-exp__activity">
-                  Desarrollo de aplicaciones web enfocadas en Cinepolis
-                </li>
-              </ul>
-            </div>
-            <div class="card-exp">
-              <h3 class="card-exp__company">Cinemark</h3>
-              <h4 class="card-exp__role">Frontend Developer</h4>
-              <ul class="card-exp__activities">
-                <li class="card-exp__activity">
-                  Programador en tecnologías webs
-                </li>
-                <li class="card-exp__activity">Vendedor de palomitasxd</li>
-              </ul>
-            </div>
-          </div>
-          <a
-            class="row__data__link button button--primary"
-            href="https://github.com/alejooroncoy"
-            target="_blank"
-            >Ver más</a
-          >
+          <h2 class="section__title">👨‍💻 Semanas 👨‍💻</h2>
+          <ul class="list">
+            <li class="list__item">
+              <a href="/semana-1/" class="link">
+                Semana 1:Introducción a HTML, Introducción a git y GitHub, HTML
+                Listas, tablas, formularios, head y SEO, Introducción a los
+                algoritmos
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
-      <figure class="wave wave--rotate">
+      <figure class="wave wave--reverse">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -225,8 +196,8 @@
           ></path>
         </svg>
       </figure>
-      <section class="section section--contact">
-        <div class="container container--elements" id="contact">
+      <section class="section" id="contact">
+        <div class="container container--elements">
           <h2 class="section__title">🌌 Contacto 🌌</h2>
           <form class="form">
             <input
@@ -250,49 +221,47 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <nav class="section section--headed">
+    <footer class="section--headed">
+      <nav class="nav">
         <div class="container container--elements">
           <ul class="menu">
-            <li class="menu__item">
+            <li>
               <a
                 href="https://www.youtube.com/channel/UCyvDZEGsLvIS2OoBK_8zX_w"
                 target="_blank"
-                class="menu__link"
               >
-                <i class="bi bi-youtube icon-youtube"></i>
+                <i class="bi bi-youtube icon-youtube menu__img--icon"></i>
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">
-                <i class="bi bi-facebook icon-facebook"></i>
+            <li>
+              <a href="#">
+                <i class="bi bi-facebook icon-facebook menu__img--icon"></i>
               </a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i class="bi bi-instagram icon-instagram"></i>
+            <li>
+              <a href="#">
+                <i class="bi bi-instagram icon-instagram menu__img--icon"></i>
               </a>
             </li>
-            <li class="menu__item">
+            <li>
               <a
                 href="https://github.com/alejooroncoy"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="footer__nav--container menu__link"
               >
-                <i class="bi bi-github icon-github"></i>
+                <i class="bi bi-github icon-github menu__img--icon"></i>
               </a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i class="bi bi-globe icon-globe"></i>
+            <li>
+              <a href="#">
+                <i class="bi bi-globe icon-globe menu__img--icon"></i>
               </a>
             </li>
           </ul>
-          <h2 class="section__footer__title">
+          <h2 class="footer__title">
             👨‍💻 Copyright &copy; 2022
             <a
-              class="section__footer-link"
+              class="footer__link"
               href="https://github.com/alejooroncoy"
               target="_blank"
               rel="noopener noreferrer"
