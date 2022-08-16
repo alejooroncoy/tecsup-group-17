@@ -92,10 +92,17 @@
   font-size: .9rem;
   text-align: center;
 }
-
+.info__description::after {
+  content: '❤';
+}
+.info__description::before {
+  content: '❤';
+}
 .footer__list-links {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
