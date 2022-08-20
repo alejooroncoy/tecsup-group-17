@@ -1,0 +1,24 @@
+.d-none {
+  display: none;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.b-radius-none {
+  border-radius: 0;
+}
+
+@media (min-width: 728px) {
+  .md\:d-none {
+    display: none;
+  }
+  .md\:d-block {
+    display: block;
+  }
+}

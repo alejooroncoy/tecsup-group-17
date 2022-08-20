@@ -1,0 +1,75 @@
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+
+.section--secondary {
+  background-color: var(--secondary-theme-color);
+}
+
+.section--hero {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: calc(5rem + var(--padding-section));
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.section--profile {
+  position: relative;
+  background-image: url('../../assets/img/background-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section--profile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--tertiary-shadow-color);
+}
+
+.section__title {
+  font-weight: 800;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.container--nav-r {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container--hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container--elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .container--hero {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
