@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--secondary-theme-color);
-  transform: translateX(100%);
+  transform: var(--translate-x-menu);
   transition: .25s transform ease;
 }
 
@@ -76,6 +76,7 @@
   color: var(--primary-text-color);
   font-size: 1.75rem;
 }
+
 @media (min-width: 768px) {
   .icon {
     display: none;

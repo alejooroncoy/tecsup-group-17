@@ -1,0 +1,8 @@
+.wave {
+  margin: 0;
+}
+
+.wave__img {
+  display: block;
+  width: 100%;
+}

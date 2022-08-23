@@ -65,7 +65,7 @@
   </head>
   <body class="body">
     <header class="header">
-      <nav class="nav">
+      <nav id="nav" class="nav">
         <div class="container container--nav-r">
           <a href="#profile">
             <img
@@ -77,9 +77,8 @@
             Alejo Oroncoy"
             />
           </a>
-          <label for="menu" class="icon">
-            <i class="bi bi-list"></i>
-          </label>
+          <a href="#nav" class="nav__action nav__action--menu"><i class="bi bi-list"></i></a>
+          <a href="#" class="nav__action nav__action--close"><i class="bi bi-x-circle"></i></i></a>
           <input type="checkbox" id="menu" class="menu__checkbox" />
           <ul class="menu menu--header">
             <li>
@@ -163,6 +162,9 @@
           </div>
         </div>
       </article>
+      <!-- <figure class="wave">
+        <img class="wave__img" src="./assets/svg/wave.svg" alt="wave">
+      </figure> -->
       <section class="section" id="experience">
         <div class="container container--elements container--table">
           <h2 class="section__title">🕴 Experiencia 🕴</h2>

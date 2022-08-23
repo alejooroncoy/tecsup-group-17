@@ -1,0 +1,21 @@
+.d-none {
+  display: none;
+}
+
+.b-radius-none {
+  border-radius: 0;
+}
+
+.t-shadow-primary {
+  text-shadow: 0 0 0.125rem var(--primary-highlight-color);
+}
+
+@media (min-width: 768px) {
+  .md\:d-none {
+    display: none;
+  }
+
+  .md\:d-block {
+    display: block;
+  }
+}

@@ -23,6 +23,15 @@
   background-position: center;
 }
 
+.section--profile::after {
+  content: '';
+  bottom: 0%;
+  position: absolute;
+  height: 1rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom, black, var(--primary-theme-color));
+}
+
 .section--profile::before {
   content: '';
   position: absolute;
@@ -37,6 +46,7 @@
   font-weight: 800;
   font-size: 1.75rem;
   margin: 0;
+  text-shadow: 0 0 0.5rem var(--primary-highlight-color);
 }
 
 .container {
@@ -47,7 +57,8 @@
 }
 
 .container--nav-r {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
 }
