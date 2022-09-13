@@ -11,16 +11,19 @@
 
 .list__item {
   border-bottom: 0.0625rem solid var(--primary-highlight-color);
-  color: var(--primary-text-color);
-  text-decoration: none;
   padding: 0.5rem;
   transition: background-color 0.25s;
 }
 
 .list__item:hover {
-  background-color: var(--secondary-theme-color);
+  background-color: var(--primary-theme-color);
 }
 
 .list__item:last-child {
   border-bottom: 0;
+}
+
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }

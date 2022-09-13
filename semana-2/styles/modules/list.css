@@ -1,4 +1,6 @@
 .list {
+  display: flex;
+  flex-direction: column;
   border-radius: var(--primary-border-radius);
   border: 0.0625rem solid var(--primary-highlight-color);
   overflow: hidden;
