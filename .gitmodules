@@ -1,0 +1,3 @@
+[submodule "anime"]
+	path = semana-4/animes
+	url = https://github.com/alejooroncoy/anime
