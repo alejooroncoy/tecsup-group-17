@@ -1,0 +1,29 @@
+.icon-instagram::before {
+  transition: background-image .25s, transform .25s;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-instagram:hover::before {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-facebook {
+  color: #1e1eff;
+}
+
+.icon-youtube {
+  color: #ff0000;
+  vertical-align: calc(-0.0625rem * 2);
+}
+
+.icon-github {
+  color: white;
+}
+
+.icon-globe {
+  color: rgb(64, 191, 200);
+}

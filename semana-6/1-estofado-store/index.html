@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estofado Store</title>
+    <link rel="stylesheet" href="./styles/css/fe.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.$/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <nav class="nav">
+        <div class="container elements elements--header-nav">
+          <a href="#">
+            <img
+              src="./assets/img/estofado.png"
+              alt="Logo Estofado Store"
+              width="40"
+              height="40"
+              class="nav__logo"
+            />
+          </a>
+          <button class="nav__action nav__action--menu" id="navActionMenu">
+            <i class="bi bi-list"></i>
+          </button>
+          <ul class="menu menu--header">
+            <li>
+              <a href="#" class="menu__link">Productos</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Nosotros</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Contacto</a>
+            </li>
+            <li class="nav__action nav__action--close" id="navActionClose">
+              <i class="bi bi-x-circle"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="swiper swiper--hero" id="heroSlider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide section section--hero"
+            style="
+              background-image: url('https://i.pinimg.com/originals/1b/10/4e/1b104eb2e16d16e8c92d765be7b78672.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="swiper-slide section section--hero"
+            style="
+              background-image: url('./assets/img/slider/img-slider-1.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="swiper-slide section section--hero"
+            style="
+              background-image: url('./assets/img/slider/img-slider-2.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="swiper-slide section section--hero"
+            style="
+              background-image: url('./assets/img/slider/img-slider-3.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <section class="section">
+        <div class="container elements">
+          <h2 class="section__title">Lo más vendido</h2>
+          <section
+            id="mostSlider"
+            class="swiper most-selled-slider"
+            id="mostSelledSlider"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://www.xtrafondos.com/thumbs/1_9715.jpg"
+                    alt="image card"
+                    width="100%"
+                    height="184"
+                    class="card__header-img"
+                  />
+                  <div class="card__body">
+                    <h4 class="card__subtitle">Chibi</h4>
+                    <h3 class="card__title">Pijama Kawait Azul</h3>
+                    <h5 class="card__price-discount">$/ 99.99</h5>
+                    <h6 class="card__price">Antes: $/ 100.00</h6>
+                    <button class="button button--primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://www.xtrafondos.com/thumbs/1_9715.jpg"
+                    alt="image card"
+                    width="100%"
+                    height="184"
+                    class="card__header-img"
+                  />
+                  <div class="card__body">
+                    <h4 class="card__subtitle">Chibi</h4>
+                    <h3 class="card__title">Pijama Kawait Azul</h3>
+                    <h5 class="card__price-discount">$/ 99.99</h5>
+                    <h6 class="card__price">Antes: $/ 100.00</h6>
+                    <button class="button button--primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://www.xtrafondos.com/thumbs/1_9715.jpg"
+                    alt="image card"
+                    width="100%"
+                    height="184"
+                    class="card__header-img"
+                  />
+                  <div class="card__body">
+                    <h4 class="card__subtitle">Chibi</h4>
+                    <h3 class="card__title">Pijama Kawait Azul</h3>
+                    <h5 class="card__price-discount">$/ 99.99</h5>
+                    <h6 class="card__price">Antes: $/ 100.00</h6>
+                    <button class="button button--primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://www.xtrafondos.com/thumbs/1_9715.jpg"
+                    alt="image card"
+                    width="100%"
+                    height="184"
+                    class="card__header-img"
+                  />
+                  <div class="card__body">
+                    <h4 class="card__subtitle">Chibi</h4>
+                    <h3 class="card__title">Pijama Kawait Azul</h3>
+                    <h5 class="card__price-discount">$/ 99.99</h5>
+                    <h6 class="card__price">Antes: $/ 100.00</h6>
+                    <button class="button button--primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://www.xtrafondos.com/thumbs/1_9715.jpg"
+                    alt="image card"
+                    width="100%"
+                    height="184"
+                    class="card__header-img"
+                  />
+                  <div class="card__body">
+                    <h4 class="card__subtitle">Chibi</h4>
+                    <h3 class="card__title">Pijama Kawait Azul</h3>
+                    <h5 class="card__price-discount">$/ 99.99</h5>
+                    <h6 class="card__price">Antes: $/ 100.00</h6>
+                    <button class="button button--primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="https://www.xtrafondos.com/thumbs/1_9715.jpg"
+                    alt="image card"
+                    width="100%"
+                    height="184"
+                    class="card__header-img"
+                  />
+                  <div class="card__body">
+                    <h4 class="card__subtitle">Chibi</h4>
+                    <h3 class="card__title">Pijama Kawait Azul</h3>
+                    <h5 class="card__price-discount">$/ 99.99</h5>
+                    <h6 class="card__price">Antes: $/ 100.00</h6>
+                    <button class="button button--primary">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

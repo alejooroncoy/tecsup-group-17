@@ -1,0 +1,43 @@
+.nav {
+  --padding-nav: 1rem;
+  --translate-menu: 100%;
+  padding-top: var(--padding-nav);
+  padding-bottom: var(--padding-nav);
+
+  @include desktop {
+    --translate-menu: 0%;
+  }
+
+  &--open {
+    --translate-menu: 0%;
+  }
+
+  &__logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  &__action {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-text-color);
+    font-size: 1.75rem;
+    padding: 0;
+    cursor: pointer;
+
+    &--menu,
+    &--close {
+      @include desktop {
+        display: none;
+      }
+    }
+
+    &--close {
+      position: absolute;
+      top: var(--padding-nav);
+      right: var(--padding-container);
+    }
+  }
+}

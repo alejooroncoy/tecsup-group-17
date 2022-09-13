@@ -1,0 +1,32 @@
+.icon {
+  &-instagram::before {
+    transition: background-image .25s, transform .25s;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  &-instagram:hover::before {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  &-facebook {
+    color: #2f8df9;
+  }
+  
+  &-youtube {
+    color: #ff0000;
+  }
+  
+  
+  &-github {
+    color: white;
+  }
+  
+  &-globe {
+    color: rgb(64, 191, 200);
+  }
+  
+}

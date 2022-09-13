@@ -1,0 +1,31 @@
+.footer {
+  &__list-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__img--icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &__img--icon::before {
+    transition: transform 0.25s;
+  }
+  &__img--icon:hover::before {
+    transform: scale(1.125);
+  }
+  &__list-link {
+    text-decoration: none;
+  }
+  @media (min-width: 728px) {
+    &__img--icon {
+      font-size: 2rem;
+    }
+  }
+}

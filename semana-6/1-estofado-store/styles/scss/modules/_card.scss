@@ -1,0 +1,33 @@
+.card {
+  border-radius: var(--primary-border-radius);
+  overflow: hidden;
+
+  &__header-img {
+    display: block;
+    height: 184px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__body {
+    @include d-flex-fd-ai-jc-g(column, stretch, flex-start, 0.125rem);
+    background-color: var(--secondary-theme-color);
+    padding: 0.5rem;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__price-discount {
+    margin: 0;
+  }
+
+  &__price {
+    margin: 0;
+  }
+}

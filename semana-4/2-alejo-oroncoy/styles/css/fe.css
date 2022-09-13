@@ -1,0 +1,112 @@
+@import '../css/modules/headed.css';
+@import '../css/modules/sections.css';
+@import '../css/modules/menu.css';
+@import '../css/modules/button.css';
+@import '../css/modules/hero.css';
+@import '../css/modules/table.css';
+@import '../css/modules/list.css';
+@import '../css/modules/form.css';
+@import '../css/modules/wave.css';
+@import './projects.css';
+@import '../css/modules/utils.css';
+@import '../css/modules/icons.css';
+.card {
+  box-shadow: 0 0 0.125rem 0 var(--reverse-primary-shadow-color);
+  border-radius: var(--primary-border-radius);
+  overflow: hidden;
+  transition: box-shadow 0.25s;
+}
+.card:hover {
+  box-shadow: 0 0 0.125rem 0 var(--primary-highlight-color);
+}
+.card--hero {
+  padding: 1rem 0;
+  z-index: 5;
+  box-shadow: 0 0 0.125rem 0.125rem var(--reverse-primary-shadow-color);
+  max-width: 320px;
+  text-align: center;
+}
+.card--hero:hover {
+  box-shadow: 0 0 0.125rem 0.125rem var(--primary-highlight-color);
+}
+.card__img {
+  background-color: var(--primary-theme-color);
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+}
+.card__img--left {
+  object-position: left;
+}
+.card__header {
+  background-color: var(--primary-shadow-color);
+  padding: 0.5rem 1rem;
+}
+.card__title {
+  font-weight: 900;
+  font-size: 1.375rem;
+  margin: 0;
+}
+.card__title--lg {
+  font-size: 1.5rem;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background-color: var(--secondary-shadow-color);
+  padding: 1rem;
+}
+.card__body--lg {
+  gap: 0.5rem;
+}
+.card__subtitle {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.card__subtitle--lg {
+  font-size: 1.375rem;
+}
+.card__subtitle--sm {
+  font-size: 1.125rem;
+}
+.card__paragraph {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin: 0;
+}
+.card__footer {
+  background-color: var(--primary-shadow-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card--hero {
+    max-width: 512px;
+  }
+  .card__title {
+    font-size: 1.5rem;
+  }
+  .card__title--lg {
+    font-size: 1.625rem;
+  }
+  .card__subtitle {
+    font-size: 1.375rem;
+  }
+  .card__subtitle--lg {
+    font-size: 1.5rem;
+  }
+  .card__subtitle--sm {
+    font-size: 1.25rem;
+  }
+  .card__paragraph {
+    font-size: 1.25rem;
+  }
+  .card__img--center {
+    object-position: center;
+  }
+}
+
+/*# sourceMappingURL=fe.css.map */

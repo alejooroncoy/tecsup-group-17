@@ -1,0 +1,125 @@
+.card {
+  box-shadow: 0 0 0.125rem 0 var(--reverse-primary-shadow-color);
+  border-radius: var(--primary-border-radius);
+  overflow: hidden;
+  transition: box-shadow 0.25s;
+
+  &:hover {
+    box-shadow: 0 0 0.125rem 0 var(--primary-highlight-color);
+  }
+
+  &--hero {
+    padding: 1rem 0;
+    z-index: 5;
+    box-shadow: 0 0 0.125rem 0.125rem var(--reverse-primary-shadow-color);
+    max-width: 320px;
+    text-align: center;
+  }
+
+  &--hero:hover {
+    box-shadow: 0 0 0.125rem 0.125rem var(--primary-highlight-color);
+  }
+
+  &__img {
+    background-color: var(--primary-theme-color);
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+  }
+
+  &__img--left {
+    object-position: left;
+  }
+
+
+  &__header {
+    background-color: var(--primary-shadow-color);
+    padding: 0.5rem 1rem;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 1.375rem;
+    margin: 0;
+  }
+
+  &__title--lg {
+    font-size: 1.5rem;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background-color: var(--secondary-shadow-color);
+    padding: 1rem;
+  }
+
+  &__body--lg {
+    gap: 0.5rem;
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  &__subtitle--lg {
+    font-size: 1.375rem;
+  }
+
+  &__subtitle--sm {
+    font-size: 1.125rem;
+  }
+
+  &__paragraph {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  &__footer {
+    background-color: var(--primary-shadow-color);
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .card {
+    &--hero {
+      max-width: 512px;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__title--lg {
+      font-size: 1.625rem;
+    }
+
+    &__subtitle {
+      font-size: 1.375rem;
+    }
+
+    &__subtitle--lg {
+      font-size: 1.5rem;
+    }
+
+    &__subtitle--sm {
+      font-size: 1.25rem;
+    }
+
+    &__paragraph {
+      font-size: 1.25rem;
+    }
+
+
+    &__img--center {
+      object-position: center;
+    }
+  }
+}

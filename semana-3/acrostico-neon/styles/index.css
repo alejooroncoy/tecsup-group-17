@@ -1,3 +1,10 @@
-body {
-  background-color: black;
+@import './modules/variables.css';
+@import './modules/section.css';
+@import './modules/animations.css';
+
+.body {
+  font-family: var(--primary-font-family);
+  background-color: var(--secondary-theme-color);
+  color: var(--primary-text-color);
+  margin: 0;
 }

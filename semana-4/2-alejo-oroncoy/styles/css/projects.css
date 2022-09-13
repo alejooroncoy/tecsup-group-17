@@ -1,0 +1,20 @@
+.projects {
+  background-color: var(--secondarynpx -theme-color);
+}
+
+.projects__container {
+  max-width: var(--max-width-container);
+  padding: var(--padding-container);
+  margin: 0 auto;
+}
+
+.projects__title {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=projects.css.map */
+
+/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,55 @@
+.menu {
+  @include d-flex-fd-ai-jc-g(row, center, center);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
+    transform: translateX(var(--translate-menu));
+    transition: transform 0.25s;
+
+    @include desktop {
+      position: initial;
+      width: initial;
+      flex-direction: initial;
+      gap: 1rem;
+      background-image: initial;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.25s;
+
+    &:hover {
+      color: var(--primary-highlight-color);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 0;
+      height: 0.0625rem;
+      background-color: var(--secondary-highlight-color);
+      transition: width 0.25s;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}

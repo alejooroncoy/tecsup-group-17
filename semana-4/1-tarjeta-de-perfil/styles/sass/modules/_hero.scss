@@ -1,0 +1,21 @@
+.hero {
+  @include d-flex-fd-ai-jc-g(row, center, center);
+  background-image: url('../assets/img/background-hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+  &-header__pro {
+    background-color: var(--primary-light-color);
+    border-radius: 50%;
+    width: min(100%, 200px);
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &-header {
+    width: 100%;
+    @include d-flex-fd-ai-jc-g(row, center, center);
+  }
+}

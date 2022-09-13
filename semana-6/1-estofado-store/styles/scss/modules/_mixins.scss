@@ -1,0 +1,13 @@
+@mixin d-flex-fd-ai-jc-g($flex-direction: row, $align-items: stretch, $justify-content: flex-start, $gap: 0) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin desktop() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

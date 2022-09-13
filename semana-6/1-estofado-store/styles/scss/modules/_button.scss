@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--primary-theme-color);
+  border: 0;
+  border-radius: var(--primary-border-radius);
+  color: var(--primary-text-color);
+  padding: 0.25em 1em;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--primary-highlight-color);
+    color: var(--reverse-primary-text-color);
+    font-weight: 700;
+  }
+}
