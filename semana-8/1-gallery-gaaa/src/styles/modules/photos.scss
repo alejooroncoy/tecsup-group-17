@@ -1,0 +1,48 @@
+.photos {
+  width: 100%;
+  height: 100%;
+  padding: calc(2rem - 0.8rem) 2rem 2rem calc(2rem - 0.8rem);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1rem;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas: "photoLarge photoLarge"
+                       "photoLeft photoRight";
+  &__photo {
+    object-fit: cover;
+    border-radius: .5rem;
+    &-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      &--large {
+        grid-area: photoLarge;
+      }
+      &--left {
+        grid-area: photoLeft;
+      }
+      &--right {
+        grid-area: photoRight;
+      }
+    }
+    &-title {
+      text-align: center;
+      font-size: 1rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      bottom: 0;
+      text-decoration: none;
+      font-weight: 700;
+      background-color: rgba(0, 0, 0, .5);
+      padding: 1rem;
+      color: white;
+      @media (min-width: 768px) {
+        right: auto;
+        border-radius: 0 1rem 0 0;
+      }
+    }
+  }
+}

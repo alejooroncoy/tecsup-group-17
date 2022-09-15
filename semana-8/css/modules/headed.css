@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-shadow-color);
+}
+
+.nav {
+  padding: 1rem 0;
+}
+
+.nav__logo {
+  display: block;
+  width: 108px;
+  height: 32px;
+}
