@@ -4,6 +4,7 @@ import '../styles/modules/button.scss';
 const ButtonSlider = ({ children, size = 48, action }) => {
   const swiper = useSwiper();
   const handleClickNextSlide = () => {
+    if(action === 'prev') return swiper.slidePrev();
     swiper.slideNext();
   }
   
