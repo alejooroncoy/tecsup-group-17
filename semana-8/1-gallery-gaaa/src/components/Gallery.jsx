@@ -7,17 +7,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import Photos from './Photos';
-import getPhotos from '../utils/getPhotos';
 import ButtonSlider from './ButtonSlider';
+import usePhotos from '../hooks/usePhotos';
 
 BsFillArrowLeftCircleFill.displayName = 'BsFillArrowLeftCircleFill';
 BsFillArrowRightCircleFill.displayName = 'BsFillArrowRightCircleFill';
 
 const Gallery = () => {
-  const photos = getPhotos(3);
+  const photos = usePhotos(3);
   return (
     <div className="main-container">
-      
       <Swiper
         className='gallery'
         loop={true}
