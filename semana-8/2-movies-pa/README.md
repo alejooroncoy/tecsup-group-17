@@ -14,7 +14,7 @@
     <thead>
       <tr>
         <th align='center'>HTML</th>
-        <th align='center'>CSS</th>
+        <th align='center'>Sass</th>
         <th align='center'>
           Javascript
         </th>
@@ -29,7 +29,7 @@
           <img src="https://www.svgrepo.com/show/353884/html-5.svg" width="50" />
         </td>
         <td>
-          <img src="https://www.svgrepo.com/show/353623/css-3.svg" width="50" />
+          <img src="https://www.svgrepo.com/show/354310/sass.svg" width="50" />
         </td>
         <td align='center'>
           <img src="https://www.svgrepo.com/show/355081/js.svg" width="40" />
